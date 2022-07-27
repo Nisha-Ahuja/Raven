@@ -1,43 +1,38 @@
 package com.xclaymation.Raven.entities;
 
-
 public class User {
 	
-	private String Password;
-	private String emailID;
-	private String empId;
+	private String emailId;
+	private int userId;
+	private String userName;
 	
-	//UserMaster Table
-	
-	public String getEmpId() {
-		return empId;
+	public String getEmailId() {
+		return emailId;
 	}
-	public void setEmpId(String empId) {
-		this.empId = empId;
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
 	}
-	public User() {
-	
-		
+	public int getUserId() {
+		return userId;
 	}
-
-	public User(String password, String emailID, String empId) {
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public User(String emailId, int userId, String userName) {
 		super();
-		Password = password;
-		this.emailID = emailID;
-		this.empId = empId;
+		this.emailId = emailId;
+		this.userId = userId;
+		this.userName = userName;
 	}
-	public String getEmailID() {
-		return emailID;
-	}
-	public void setEmailID(String emailID) {
-		this.emailID = emailID;
-	}
-	
-	public String getPassword() {
-		return Password;
-	}
-	public void setPassword(String password) {
-		Password = password;
+	public User()
+	{
+		
 	}
 	
 
